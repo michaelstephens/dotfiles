@@ -6,8 +6,8 @@
 
 ########## Variables
 
-dir=~/dotfiles               # dotfiles directory
-olddir=~/dotfiles/dotold     # old dotfiles backup directory
+dir=~/git/dotfiles               # dotfiles directory
+olddir=~/git/dotfiles/dotold     # old dotfiles backup directory
 files="bashrc vimrc vim irbrc bash_profile zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
 
 ##########
@@ -22,7 +22,7 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
   echo "Moving any existing dotfiles from ~ to $olddir"
   mv ~/.$file ~/dotfiles_old/
