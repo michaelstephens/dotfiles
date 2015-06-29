@@ -4,6 +4,13 @@
 # This script installs yaourt. ONLY RUN ON A FRESH INSTALL OF ARCH.
 ############################
 
+
+######## Restoring settings
+echo 'Restoring pacman.conf'
+sudo cp pacman.conf /etc/pacman.conf
+
+
+######## Yaourt import
 echo 'Downloading yaourt...'
 mkdir tmp
 curl -o ./tmp/yaourt.tar.gz 'https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz'

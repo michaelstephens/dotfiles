@@ -5,6 +5,8 @@
 # REQUIRES YAOURT
 ############################
 
+cp /etc/pacman.conf .
+
 if type "$yaourt" > /dev/null; then
   echo "Please install Yaourt."
 else
