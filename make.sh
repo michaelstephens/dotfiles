@@ -6,9 +6,9 @@
 
 ########## Variables
 
-dir=~/dot_files/dot                         # dotfiles directory
-olddir=~/dot_files/dot_old                  # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
+dir=~/dotfiles               # dotfiles directory
+olddir=~/dotfiles/dotold     # old dotfiles backup directory
+files="bashrc vimrc vim irbrc bash_profile zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
 
 ##########
 

@@ -11,8 +11,9 @@ syntax on
 
 " SETTINGS
 :set tabstop=2 shiftwidth=2 expandtab
-:set autoindent
-:set cindent
+:set backspace=2
+" :set autoindent
+" :set cindent
 :set number
 
 " PLUGINS
@@ -40,4 +41,3 @@ Plugin 'tomasr/molokai'
 Plugin 'slim-template/vim-slim'
 Plugin 'leshill/vim-json'
 Plugin 'kien/rainbow_parentheses.vim'
-
