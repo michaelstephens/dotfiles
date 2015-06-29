@@ -1,0 +1,31 @@
+"*":
+  "exception-reporting":
+    userId: "71811eba-2f26-aec8-d6e8-f7c58fc5e8d0"
+  welcome:
+    showOnStartup: false
+  core:
+    disabledPackages: [
+      "wrap-guide"
+      "git-tab-status"
+    ]
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    fontSize: 13
+  minimap:
+    plugins:
+      "git-diff": true
+      selection: true
+      "highlight-selected": true
+      "color-highlight": true
+      "find-and-replace": true
+  autosave:
+    enabled: true
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "tabs-to-spaces":
+    onSave: "untabify"
+  tabs:
+    enableVcsColoring: true
