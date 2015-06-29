@@ -5,7 +5,7 @@
 - Run `./redot.sh` to symlink
 	- If you receive an error running `./redot.sh` run `chmod +x ./redot.sh`
 
-## [Atom](atom.io) 
+## [Atom](https://atom.io/) 
 All of my atom settings are saved in `config.cson`. The `package-install.sh` file will restore these settings as well as all my packages and themes. The file `package-list.txt` is my list of currently installed packages.
 
 #### Backup 
