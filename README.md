@@ -25,7 +25,7 @@ My arch installation uses the tool [Yaourt](https://wiki.archlinux.org/index.php
 	- Only one copy of your packagelist is saved
 
 #### Restore
-The restore script will assume you are on a fresh install and haven't even installed yaourt. It will download the tarballf rom AUR and install it for your.
+The restore script will assume you are on a fresh install and haven't even installed yaourt. It will download the tarball from AUR and install it for your.
 
 - Run `./initial-setup.sh` (Thats it!)
 	- This requires the `backups/` folder to not be empty and contain a yaourt backup of your packagelist
