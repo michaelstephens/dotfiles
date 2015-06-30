@@ -37,7 +37,7 @@ The master restore script is meant to be run once at set up. It is not something
 
 #### Variables
 
-- **Enablers** - These enable/disable the individual backup script. They default to true, change to false if you do not wish to back up that specific tool. Dot_on will symlink your dotfiles, this only needs to be done once.
+- **Enablers** - These enable/disable the individual backup script. They default to true, change to false if you do not wish to restore that specific tool. Dot_on will symlink your dotfiles, this only needs to be done once.
   - `arch_on`
   - `atom_on`
   - `dot_on`
