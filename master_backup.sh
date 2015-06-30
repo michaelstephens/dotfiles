@@ -15,7 +15,7 @@ arch_dir=~/git/dotfiles/arch
 atom_dir=~/git/dotfiles/atom
 gnome_dir=~/git/dotfiles/gnome
 # This determines if you want to push your backup to git
-push_to_git = true
+push_to_git=true
 timestamp=$(date +"%m-%d-%Y")
 ########
 
