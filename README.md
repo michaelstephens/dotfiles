@@ -58,8 +58,6 @@ This script runs three individual scripts:
 - **Atom Text Editor Restore**
 - **Gnome Restore**
 
-On top of that it has the ability to tap into your git setup and automatically commit changes with a timestamp.
-
 ## General
 
 #### How to install
