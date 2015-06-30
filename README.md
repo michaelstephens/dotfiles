@@ -1,6 +1,7 @@
 #![](http://i.imgur.com/msEXHsu.png) dotfiles
 
 ## Master Backup
+
 #### Description
 
 The master backup script is meant to be a one stop place to back up all of your data. It is designed to allow an automation script to simply run it and it will take care of the rest. This script was meant to run in tandem with [Systemd Timers](https://wiki.archlinux.org/index.php/Systemd/Timers).
@@ -57,6 +58,21 @@ This script runs three individual scripts:
 - **Arch Restore**
 - **Atom Text Editor Restore**
 - **Gnome Restore**
+
+## [Systemd Timers](https://wiki.archlinux.org/index.php/Systemd/Timers)
+
+#### Setup
+- Edit `backup.service` to have the absolute path to your `master_backup.sh` file
+- Run `./first_time_setup.sh` to copy over the `backup.timer` and `backup.service` to `/et/systemd/system/`
+
+#### What it does
+- Moves the `backup.service` and `backup.timer` files over to the proper folder
+- Reloads `systemd` to load in your timer
+- Enables the `backup.timer` in `systemd`
+- Starts `backup.timer` in `systemd`
+- Lists all Timers, make sure yours is included
+  - It should show `backup.timer` under `UNIT`
+  - It should show `backup.service` under `ACTIVATES`
 
 ## General
 
