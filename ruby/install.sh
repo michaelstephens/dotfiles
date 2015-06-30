@@ -35,12 +35,3 @@ if type ruby; then
   rbenv rehash
   gem install mysql2
 fi
-
-echo "Set up Git..."
-git config --global color.ui true
-# These are specific to me, be sure to set your own
-git config --global user.name $username
-git config --global user.email $email
-# This checks authentication against GitHub.
-# Remove or comment this out if you do not use GitHub.
-ssh -T git@github.com

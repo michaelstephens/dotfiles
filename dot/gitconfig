@@ -1,0 +1,7 @@
+[color]
+	ui = true
+[user]
+	name = Michael Stephens
+	email = michael.stephens@biola.edu
+[push]
+	default = simple
