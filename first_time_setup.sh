@@ -1,7 +1,7 @@
 #!/bin/bash
 ############################
-# master_backup.sh
-# This script is for automation. It will run all the backup scripts.
+# first_time_setup.sh
+# This script is the timer setup for systemd to allow automation.
 ############################
 
 echo "Moving the backup.service file..."
