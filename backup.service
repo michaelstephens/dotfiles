@@ -1,0 +1,6 @@
+[Unit]
+Description=Run backup daily.
+
+[Service]
+Type=oneshot
+ExecStart=/home/michaelstephens/git/dotfiles
