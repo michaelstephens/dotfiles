@@ -141,7 +141,7 @@ Gnome 3 shell extensions and gconf backups
 
 ## [Ruby on Rails](http://rubyonrails.org/)
 
-This script installs ruby 2.2.2, 2.2.0, and 2.1.4.
+This script installs ruby `2.2.2`, `2.2.0`, and `2.1.4`.
 
 #### Installation
 - Run `./install.sh`
