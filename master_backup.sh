@@ -25,7 +25,7 @@ cd $home_dir
 if $arch_on; then
   echo "Beginning Arch backup..."
   cd $arch_dir
-  ./backup-arch.sh
+  ./backup.sh
   cd $home_dir
 else
   echo "Skipping Arch backup..."
@@ -35,7 +35,7 @@ fi
 if $atom_on; then
   echo "Beginning Atom backup..."
   cd $atom_dir
-  ./backup-packages.sh
+  ./backup.sh
   cd $home_dir
 else
   echo "Skipping Atom backup..."
