@@ -48,3 +48,10 @@ Gnome 3 shell extensions and gconf backups
 
 #### Restore
 - Run `./restore.sh`
+
+## [Ruby on Rails](http://rubyonrails.org/)
+
+This script installs ruby 2.2.2, 2.2.0, and 2.1.4 as well as rails and sets up Git.
+
+#### Installation
+- Run `./install.sh`
