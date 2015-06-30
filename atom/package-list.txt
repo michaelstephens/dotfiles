@@ -4,6 +4,7 @@ highlight-selected@0.10.1
 isotope-ui@2.4.2
 language-haml@0.21.0
 language-slim@0.4.0
+markdown-preview-plus@1.5.0
 minimap@4.10.1
 minimap-color-highlight@4.1.4
 minimap-find-and-replace@4.2.0

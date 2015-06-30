@@ -29,3 +29,4 @@
     onSave: "untabify"
   tabs:
     enableVcsColoring: true
+  "markdown-preview-plus": {}
