@@ -1,12 +1,72 @@
 #![](http://i.imgur.com/msEXHsu.png) dotfiles
 
+## Master Backup
+#### Description
+
+The master backup script is meant to be a one stop place to back up all of your data. It is designed to allow an automation script to simply run it and it will take care of the rest. This script was meant to run in tandem with [Chef-Solo](https://docs.chef.io/chef_solo.html).
+
+See docs below to learn more about each individual backup script.
+
+#### Variables
+
+- **Enablers** - These enable/disable the individual backup script. They default to true, change to false if you do not wish to back up that specific tool.
+  - `arch_on`
+  - `atom_on`
+  - `gnome_on`
+- **Directories** - These are the directories in which you have saved this project. Home directory should be `path/to/dotfiles`.
+  - `home_dir`
+  - `arch_dir`
+  - `atom_dir`
+  - `gnome_dir`
+- **Git** - This will determine if this script should push your changes to git with a timestamp when it backs up.
+  - `push_to_git`
+  - `timestamp`
+
+#### Functionality
+
+This script runs three individual scripts:
+- **Arch backup**
+- **Atom Text Editor backup**
+- **Gnome backup**
+
+On top of that it has the ability to tap into your git setup and automatically commit changes with a timestamp.
+
+## Master Restore
+
+The master restore script is meant to be run once at set up. It is not something that should be run automatically since it can and will overwrite certain setups. It will help with an initial computer set up.
+
+#### Variables
+
+- **Enablers** - These enable/disable the individual backup script. They default to true, change to false if you do not wish to back up that specific tool. Dot_on will symlink your dotfiles, this only needs to be done once.
+  - `arch_on`
+  - `atom_on`
+  - `dot_on`
+  - `gnome_on`
+  - `ruby_on`
+- **Directories** - These are the directories in which you have saved this project. Home directory should be `path/to/dotfiles`.
+  - `home_dir`
+  - `arch_dir`
+  - `atom_dir`
+  - `dot_dir`
+  - `gnome_dir`
+  - `ruby_dir`
+
+#### Functionality
+
+This script runs three individual scripts:
+- **Arch Restore**
+- **Atom Text Editor Restore**
+- **Gnome Restore**
+
+On top of that it has the ability to tap into your git setup and automatically commit changes with a timestamp.
+
 ## General
 
 #### How to install
 
 - `git clone` plus the url (ssh or https)
 - Alternatively you can download the zip
-- If you want to contribute create a fork and then a pull request 
+- If you want to contribute create a fork and then a pull request
 
 
 #### Tips
