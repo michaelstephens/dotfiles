@@ -55,6 +55,7 @@ echo "Backup finished"
 
 if $push_to_git; then
   cd $home_dir
+  echo "Pushing to Git..."
   git add .
   git commit -m "$timestamp : Automatic backup"
   git push
