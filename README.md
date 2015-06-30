@@ -3,7 +3,7 @@
 ## Master Backup
 #### Description
 
-The master backup script is meant to be a one stop place to back up all of your data. It is designed to allow an automation script to simply run it and it will take care of the rest. This script was meant to run in tandem with [Chef-Solo](https://docs.chef.io/chef_solo.html).
+The master backup script is meant to be a one stop place to back up all of your data. It is designed to allow an automation script to simply run it and it will take care of the rest. This script was meant to run in tandem with [Systemd Timers](https://wiki.archlinux.org/index.php/Systemd/Timers).
 
 See docs below to learn more about each individual backup script.
 
