@@ -8,12 +8,14 @@
 # These enable/disable the specific restore
 arch_on=true
 atom_on=true
+dot_on=true
 gnome_on=true
 ruby_on=true
 # These are the directories for the scripts
 home_dir=~/git/dotfiles
 arch_dir=~/git/dotfiles/arch
 atom_dir=~/git/dotfiles/atom
+dot_dir=~/git/dotfiles/dot
 gnome_dir=~/git/dotfiles/gnome
 ruby_dir=~/git/dotfiles/ruby
 ########
@@ -58,6 +60,16 @@ if $atom_on; then
   cd $home_dir
 else
   echo "Skipping Atom restore..."
+fi
+
+# Restore for dotfiles
+if $dot_on; then
+  echo "Beginning Dotfile restore..."
+  cd $dot_dir
+  ./redot.sh
+  cd $home_dir
+else
+  echo "Skipping Dotfile restore..."
 fi
 
 echo "Restore finished"
