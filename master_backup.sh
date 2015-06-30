@@ -6,14 +6,14 @@
 
 ######## Variables
 # These enable/disable the specific backup
-arch_on = true
-atom_on = true
-gnome_on = true
+arch_on=true
+atom_on=true
+gnome_on=true
 # These are the directories for the scripts
-home_dir = ~/git/dotfiles
-arch_dir = ~/git/dotfiles/arch
-atom_dir = ~/git/dotfiles/atom
-gnome_dir = ~/git/dotfiles/gnome
+home_dir=~/git/dotfiles
+arch_dir=~/git/dotfiles/arch
+atom_dir=~/git/dotfiles/atom
+gnome_dir=~/git/dotfiles/gnome
 # This determines if you want to push your backup to git
 push_to_git = true
 timestamp=$(date +"%m-%d-%Y")
