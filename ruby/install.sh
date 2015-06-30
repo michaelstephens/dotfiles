@@ -1,6 +1,6 @@
 #!/bin/bash
 ############################
-# backup.sh
+# install.sh
 # This script installs ruby
 ############################
 
