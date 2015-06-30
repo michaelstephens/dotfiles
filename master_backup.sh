@@ -25,7 +25,7 @@ cd $home_dir
 if $arch_on; then
   echo "Beginning Arch backup..."
   cd $arch_dir
-  ./backup_arch.sh
+  ./backup-arch.sh
   cd $home_dir
 else
   echo "Skipping Arch backup..."
@@ -56,6 +56,6 @@ echo "Backup finished"
 if $push_to_git; then
   cd $home_dir
   git add .
-  git commit -m "Automatic backup - $timestamp"
+  git commit -m "$timestamp : Automatic backup"
   git push
 fi
