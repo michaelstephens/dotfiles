@@ -21,5 +21,9 @@ cd yaourt/
 makepkg -s
 sudo pacman -U *.tar.xz
 cd ../../
-echo 'Installing AUR packages...'
-yaourt --backup backups/*
+if [ "$(ls -A backups/)" ]; then
+  echo 'Installing AUR packages...'
+  yaourt --backup backups/*
+else
+  echo "COULD NOT RESTORE: No backup found."
+fi
