@@ -57,3 +57,5 @@ if $push_to_git; then
   cd $home_dir
   git add .
   git commit -m "Automatic backup - $timestamp"
+  git push
+fi
