@@ -11,7 +11,7 @@ minimap-find-and-replace@4.2.0
 minimap-git-diff@4.1.3
 minimap-highlight-selected@4.3.0
 minimap-selection@4.3.0
-pigments@0.8.1
+pigments@0.8.2
 retro-gruvbox@1.0.4
 seti-syntax@0.4.0
 seti-ui@0.7.1
