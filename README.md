@@ -1,9 +1,25 @@
 #![](http://i.imgur.com/msEXHsu.png) dotfiles
 
+## General
+
+#### How to install
+
+- `git clone` plus the url (ssh or https)
+- Alternatively you can download the zip
+- If you want to contribute create a fork and then a pull request 
+
+
+#### Tips
+
+This is the general directions applicable to every script.
+
+- Be sure to `cd dir/of/script/` before running any script.
+- If you receive an error running `./script.sh` run `chmod +x ./script.sh`
+- Be sure to look at each script before running it to make any necessary modifications before running it.
+
 ## .files
 - Replace current dot files with your own (`mv ~/.dotrc ~/dotfiles/dot/. `) or use mine.
 - Run `./redot.sh` to symlink
-  - If you receive an error running `./redot.sh` run `chmod +x ./redot.sh`
 
 ## [Atom](https://atom.io/)
 All of my atom settings are saved in `config.cson`. The `package-install.sh` file will restore these settings as well as all my packages and themes. The file `package-list.txt` is my list of currently installed packages.
@@ -55,3 +71,9 @@ This script installs ruby 2.2.2, 2.2.0, and 2.1.4 as well as rails and sets up G
 
 #### Installation
 - Run `./install.sh`
+
+
+## Disclaimer
+- This is open sourced and the code is available for anyone to use. There is no reason for you to not understand what each script is doing.
+- Nothing in this project is malicious at all.
+- I do not take responsibility for anything broken on your machine, please look through the code and understand what is happening.
