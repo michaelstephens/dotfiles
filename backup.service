@@ -3,4 +3,4 @@ Description=Run backup daily.
 
 [Service]
 Type=oneshot
-ExecStart=/home/michaelstephens/git/dotfiles
+ExecStart=/home/michaelstephens/git/dotfiles/master_backup.sh
