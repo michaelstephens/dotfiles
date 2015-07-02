@@ -11,6 +11,7 @@ atom_on=true
 dot_on=true
 gnome_on=true
 ruby_on=true
+conky_on=true
 # These are the directories for the scripts
 home_dir=~/git/dotfiles
 arch_dir=~/git/dotfiles/arch
@@ -18,6 +19,7 @@ atom_dir=~/git/dotfiles/atom
 dot_dir=~/git/dotfiles/dot
 gnome_dir=~/git/dotfiles/gnome
 ruby_dir=~/git/dotfiles/ruby
+conky_dir=~/git/dotfiles/conky
 ########
 
 cd $home_dir
@@ -70,6 +72,16 @@ if $dot_on; then
   cd $home_dir
 else
   echo "Skipping Dotfile restore..."
+fi
+
+# Restore for conky
+if $conky_on; then
+  echo "Beginning Conky restore..."
+  cd $conky_dir
+  ./install.sh
+  cd $home_dir
+else
+  echo "Skipping Conky restore..."
 fi
 
 echo "Restore finished"
