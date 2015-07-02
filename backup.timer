@@ -3,6 +3,7 @@ Description=Run backup daily.
 
 [Timer]
 OnCalendar=daily
+OnUnitActiveSec=1min
 Persistent=true
 
 [Install]

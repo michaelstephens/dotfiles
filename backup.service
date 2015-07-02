@@ -6,4 +6,8 @@ After=network.target
 [Service]
 WorkingDirectory=/home/michaelstephens/git/dotfiles
 Type=forking
+User=michaelstephens
 ExecStart=/bin/bash -c ./master_backup.sh
+
+[Install]
+WantedBy=multi-user.target
