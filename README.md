@@ -44,6 +44,7 @@ The master restore script is meant to be run once at set up. It is not something
   - `dot_on`
   - `gnome_on`
   - `ruby_on`
+  - `conky_on`
 - **Directories** - These are the directories in which you have saved this project. Home directory should be `path/to/dotfiles`.
   - `home_dir`
   - `arch_dir`
@@ -51,6 +52,7 @@ The master restore script is meant to be run once at set up. It is not something
   - `dot_dir`
   - `gnome_dir`
   - `ruby_dir`
+  - `conky_dir`
 
 #### Functionality
 
@@ -141,7 +143,15 @@ Gnome 3 shell extensions and gconf backups
 
 ## [Ruby on Rails](http://rubyonrails.org/)
 
-This script installs ruby `2.2.2`, `2.2.0`, and `2.1.4`.
+This script installs rbenv, ruby `2.2.2`, `2.2.0`, and `2.1.4`, and rails.
+
+#### Installation
+- Run `./install.sh`
+
+
+## [Conky](https://wiki.archlinux.org/index.php/Conky)
+
+This script installs the [Conky Theme I use](http://zagortenay333.deviantart.com/art/Conky-Harmattan-426662366).
 
 #### Installation
 - Run `./install.sh`
