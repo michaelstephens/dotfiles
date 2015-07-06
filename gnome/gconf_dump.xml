@@ -231,7 +231,7 @@
       <key>/apps/guake/general/use_trayicon</key>
       <schema_key>/schemas/apps/guake/general/use_trayicon</schema_key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
@@ -419,7 +419,7 @@
       <key>/apps/guake/keybindings/local/rename_current_tab</key>
       <schema_key>/schemas/apps/guake/keybindings/local/rename_current_tab</schema_key>
       <value>
-        <string>&lt;Control&gt;F2</string>
+        <string>&lt;Primary&gt;&lt;Shift&gt;r</string>
       </value>
     </entry>
     <entry>
@@ -447,7 +447,7 @@
       <key>/apps/guake/keybindings/local/switch_tab2</key>
       <schema_key>/schemas/apps/guake/keybindings/local/switch_tab2</schema_key>
       <value>
-        <string>&lt;Control&gt;F2</string>
+        <string>&lt;Primary&gt;&lt;Shift&gt;Home</string>
       </value>
     </entry>
     <entry>
