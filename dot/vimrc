@@ -12,9 +12,11 @@ syntax on
 " SETTINGS
 :set tabstop=2 shiftwidth=2 expandtab
 :set backspace=2
-" :set autoindent
-" :set cindent
+:set autoindent
+:set cindent
 :set number
+:set pastetoggle=<F1>
+
 
 " PLUGINS
 Plugin 'gmarik/Vundle.vim'
