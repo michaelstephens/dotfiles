@@ -8,6 +8,10 @@
       "wrap-guide"
       "git-tab-status"
     ]
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   editor:
     invisibles: {}
     showIndentGuide: true

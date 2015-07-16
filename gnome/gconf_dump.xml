@@ -587,7 +587,7 @@
       <key>/apps/guake/style/font/palette_name</key>
       <schema_key>/schemas/apps/guake/style/font/palette_name</schema_key>
       <value>
-        <string>Tango</string>
+        <string>Custom</string>
       </value>
     </entry>
     <entry>
