@@ -35,3 +35,5 @@
     enableVcsColoring: true
   "markdown-preview-plus": {}
   pigments: {}
+  "atom-beautify":
+    _analyticsUserId: "6e2b3229-4729-4388-9ff6-1f217faef2da"

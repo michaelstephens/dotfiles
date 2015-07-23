@@ -126,7 +126,7 @@
       <key>/apps/guake/general/quick_open_enable</key>
       <schema_key>/schemas/apps/guake/general/quick_open_enable</schema_key>
       <value>
-        <bool>true</bool>
+        <bool>false</bool>
       </value>
     </entry>
     <entry>
