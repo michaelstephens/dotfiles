@@ -5,8 +5,8 @@ After=network.target
 
 [Service]
 Type=forking
-User=michaelstephens
-ExecStart=/home/michaelstephens/git/dotfiles/master_backup.sh
+User=michaels69
+ExecStart=/home/michaels69/git/dotfiles/master_backup.sh
 
 [Install]
 WantedBy=multi-user.target

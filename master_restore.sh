@@ -6,12 +6,12 @@
 
 ######## Variables
 # These enable/disable the specific restore
-arch_on=true
+arch_on=false
 atom_on=true
 dot_on=true
-gnome_on=true
-ruby_on=true
-conky_on=true
+gnome_on=false
+ruby_on=falses
+conky_on=false
 # These are the directories for the scripts
 home_dir=~/git/dotfiles
 arch_dir=~/git/dotfiles/arch
