@@ -39,3 +39,5 @@ else
   cd $ohmyzsh/custom/plugins
   git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 fi
+
+source ~/.zshrc
