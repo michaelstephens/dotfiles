@@ -57,7 +57,9 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export GPGKEY=CAAD14C3
 
-eval "$(rbenv init -)"
+if ! type rbenv > /dev/null; then
+  eval "$(rbenv init -)"
+fi
 
 LD_LIBRARY_PATH=/opt/oracle/instantclient_12_1
 export LD_LIBRARY_PATH
@@ -67,6 +69,7 @@ alias git-pull-all='for i in */.git; do ( echo $i; cd $i/..; git pull;  ); done'
 alias bundle-prax='for i in */.git; do ( echo $i; cd $i/..; bundle; prax link;  ); done'
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias zshrc="vim ~/.zshrc && reload"
+alias ccat='highlight -O ansi'
 # . /etc/profile.d/vte.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
