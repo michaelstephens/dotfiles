@@ -1,7 +1,6 @@
 # Path to your oh-my-zsh installation.
 #export ZSH=/home/michaels69/.dotfiles/zsh
 export ZSH=/home/michaels69/.oh-my-zsh
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -56,6 +55,7 @@ export EDITOR=vim
 export VISUAL=vim
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+export GPGKEY=CAAD14C3
 
 eval "$(rbenv init -)"
 
@@ -64,6 +64,7 @@ export LD_LIBRARY_PATH
 
 # Custom Commands
 alias git-pull-all='for i in */.git; do ( echo $i; cd $i/..; git pull;  ); done'
+alias bundle-prax='for i in */.git; do ( echo $i; cd $i/..; bundle; prax link;  ); done'
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias zshrc="vim ~/.zshrc && reload"
 # . /etc/profile.d/vte.sh
@@ -94,3 +95,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export GOPATH=$HOME/gopath
+export PATH=$GOPATH:$GOPATH/bin:$PATH
