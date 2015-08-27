@@ -69,7 +69,9 @@ alias git-pull-all='for i in */.git; do ( echo $i; cd $i/..; git pull;  ); done'
 alias bundle-prax='for i in */.git; do ( echo $i; cd $i/..; bundle; prax link;  ); done'
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias zshrc="vim ~/.zshrc && reload"
-alias ccat='highlight -O ansi'
+alias ccat='pygmentize -g -O style=colorful'
+alias ccat-ln='pygmentize -g -O style=colorful,linenos=1'
+# alias ccat='highlight -O ansi'
 # . /etc/profile.d/vte.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
