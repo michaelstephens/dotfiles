@@ -58,10 +58,6 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export GPGKEY=CAAD14C3
 
-if ! type rbenv > /dev/null; then
-  eval "$(rbenv init -)"
-fi
-
 LD_LIBRARY_PATH=/opt/oracle/instantclient_12_1
 export LD_LIBRARY_PATH
 
