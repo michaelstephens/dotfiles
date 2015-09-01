@@ -6,9 +6,9 @@
 
 ######## Variables
 # These enable/disable the specific backup
-arch_on=true
+arch_on=false
 atom_on=true
-gnome_on=true
+gnome_on=false
 # These are the directories for the scripts
 home_dir=~/git/dotfiles
 arch_dir=~/git/dotfiles/arch
