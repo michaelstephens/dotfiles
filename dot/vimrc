@@ -3,7 +3,6 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-execute pathogen#infect()
 
 cmap w!! %sudo tee > /dev/null %
 filetype plugin indent on
