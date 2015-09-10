@@ -68,8 +68,8 @@ alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias zshrc="vim ~/.zshrc && reload"
 alias ccat='pygmentize -g -O style=colorful'
 alias ccat-ln='pygmentize -g -O style=colorful,linenos=1'
-alias start='sudo systemctl start'
-alias stop='sudo systemctl stop'
+alias start='sudo start'
+alias stop='sudo stop'
 alias process='ps ax | grep'
 # alias ccat='highlight -O ansi'
 # . /etc/profile.d/vte.sh
