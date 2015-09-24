@@ -67,12 +67,15 @@ export LD_LIBRARY_PATH
 # Custom Commands
 alias git-pull-all='for i in */.git; do ( echo $i; cd $i/..; git pull;  ); done'
 alias bundle-prax='for i in */.git; do ( echo $i; cd $i/..; bundle; prax link;  ); done'
-alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
-alias zshrc="vim ~/.zshrc && reload"
+alias zshreload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+alias zshrc="vim ~/.zshrc && zshreload"
 alias ccat='pygmentize -g -O style=colorful'
 alias ccat-ln='pygmentize -g -O style=colorful,linenos=1'
 alias start='sudo systemctl start'
 alias stop='sudo systemctl stop'
+alias reload='sudo systemctl reload'
+alias restart='sudo systemctl restart'
+alias status='sudo systemctl status'
 alias process='ps ax | grep'
 alias berks-update="berks update && berks upload -e integration"
 # alias ccat='highlight -O ansi'
