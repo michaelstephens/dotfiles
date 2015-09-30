@@ -66,8 +66,8 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_12_1
 # Custom Commands
 alias git-pull-all='for i in */.git; do ( echo $i; cd $i/..; git pull;  ); done'
 alias commit='git add .; git commit .'
-alias sidekiq-rack='sidekiq -r ./config/environment'
-alias irb-rack='irb -r ./config/environment'
+alias sidekiq-rack='sidekiq -r ./config/environment.rb'
+alias irb-rack='irb -r ./config/environment.rb'
 alias bundle-prax='for i in */.git; do ( echo $i; cd $i/..; bundle; prax link;  ); done'
 alias zshreload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias zshrc="vim ~/.zshrc && zshreload"
