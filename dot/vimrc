@@ -15,7 +15,8 @@ syntax on
 :set cindent
 :set number
 :set pastetoggle=<F1>
-
+set number
+nnoremap <F2> :set nonumber!<CR>
 
 " PLUGINS
 Plugin 'gmarik/Vundle.vim'
