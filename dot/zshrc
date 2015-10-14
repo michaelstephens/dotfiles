@@ -79,7 +79,7 @@ alias reload='sudo systemctl reload'
 alias restart='sudo systemctl restart'
 alias status='sudo systemctl status'
 alias process='ps ax | grep'
-alias berks-update="berks update && berks upload -e integration"
+alias berks-update="berks update -e integration && berks upload -e integration"
 # alias ccat='highlight -O ansi'
 # . /etc/profile.d/vte.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
