@@ -64,12 +64,15 @@ export LD_LIBRARY_PATH
 # Custom Commands
 alias git-pull-all='for i in */.git; do ( echo $i; cd $i/..; git pull;  ); done'
 alias bundle-prax='for i in */.git; do ( echo $i; cd $i/..; bundle; prax link;  ); done'
-alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
-alias zshrc="vim ~/.zshrc && reload"
+alias zshreload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+alias zshrc="vim ~/.zshrc && zshreload"
 alias ccat='pygmentize -g -O style=colorful'
 alias ccat-ln='pygmentize -g -O style=colorful,linenos=1'
-alias start='sudo systemctl start'
-alias stop='sudo systemctl stop'
+alias start='sudo start'
+alias stop='sudo stop'
+alias restart='sudo restart'
+alias reload='sudo reload'
+alias status='sudo status'
 alias process='ps ax | grep'
 alias nginx-reload='sudo service nginx reload'
 # alias ccat='highlight -O ansi'
