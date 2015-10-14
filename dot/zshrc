@@ -74,6 +74,7 @@ alias ccat-ln='pygmentize -g -O style=colorful,linenos=1'
 alias start='sudo systemctl start'
 alias stop='sudo systemctl stop'
 alias process='ps ax | grep'
+alias berks-update="berks update && berks upload -e integration"
 # alias ccat='highlight -O ansi'
 # . /etc/profile.d/vte.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -105,3 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export GOPATH=$HOME/gopath
 export PATH=$GOPATH:$GOPATH/bin:$PATH
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
