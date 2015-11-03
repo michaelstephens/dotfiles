@@ -5,12 +5,11 @@
     showOnStartup: false
   core:
     disabledPackages: [
-      "wrap-guide"
       "git-tab-status"
     ]
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "atom-material-ui"
+      "atom-material-syntax"
     ]
   editor:
     invisibles: {}
