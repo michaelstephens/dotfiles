@@ -79,17 +79,6 @@ if defined? Benchmark
   end
 end
 
-# Load and configure biola_web_services gem if it exists
-# Grabs configuration values from environment variables upcased and prefixed with BIOLA_WS_
-load_gem 'biola_web_services' do
-  BiolaWebServices.configure do |config|
-    [:url, :cert_path, :key_path, :key_password, :verify_ssl, :ssl_version].each do |key|
-      env_value = ENV["BIOLA_WS_#{key.upcase}"]
-      config.send(:"#{key}=", env_value)# unless env_value = nil?
-    end
-  end
-end
-
 # Random time method
 class Time
   def self.random(from=Time.at(0), to=Time.now)

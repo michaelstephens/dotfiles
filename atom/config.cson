@@ -1,38 +1,73 @@
 "*":
-  "exception-reporting":
-    userId: "71811eba-2f26-aec8-d6e8-f7c58fc5e8d0"
-  welcome:
-    showOnStartup: false
-  core:
-    disabledPackages: [
-      "git-tab-status"
-    ]
-    themes: [
-      "atom-material-ui"
-      "atom-material-syntax"
-    ]
-  editor:
-    invisibles: {}
-    showIndentGuide: true
-    fontSize: 13
-  minimap:
-    plugins:
-      "git-diff": true
-      selection: true
-      "highlight-selected": true
-      "color-highlight": true
-      "find-and-replace": true
-  autosave:
-    enabled: true
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
-  "one-dark-ui":
-    layoutMode: "Compact"
-  "tabs-to-spaces":
-    onSave: "untabify"
-  tabs:
-    enableVcsColoring: true
-  "markdown-preview-plus": {}
-  pigments: {}
   "atom-beautify":
     _analyticsUserId: "6e2b3229-4729-4388-9ff6-1f217faef2da"
+  autosave:
+    enabled: true
+  core:
+    customFileTypes:
+      "source-python": [
+        "pp"
+      ]
+    disabledPackages: [
+      "git-tab-status"
+      "vim-mode"
+      "Sublime-Style-Column-Selection"
+      "atom-beautify"
+      "linter"
+      "linter-shellcheck"
+      "minimap-find-and-replace"
+      "tabs-to-spaces"
+      "imdone-atom"
+      "activate-power-mode"
+      "hidpi"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    backUpBeforeSaving: true
+    fontSize: 13
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "71811eba-2f26-aec8-d6e8-f7c58fc5e8d0"
+  "file-icons": {}
+  "file-types":
+    $caseSensitive: true
+  "find-and-replace":
+    scrollToResultOnLiveSearch: true
+  "genesis-ui":
+    distractionFree:
+      hideSpotified: true
+  "markdown-preview":
+    useGitHubStyle: true
+  "markdown-preview-plus": {}
+  minimap:
+    plugins:
+      "color-highlight": true
+      "find-and-replace": true
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+      selection: true
+      selectionDecorationsZIndex: 0
+  "one-dark-ui":
+    layoutMode: "Compact"
+  pigments: {}
+  "seti-ui":
+    compactView: true
+  tabs:
+    enableVcsColoring: true
+  "tabs-to-spaces":
+    onSave: "untabify"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false

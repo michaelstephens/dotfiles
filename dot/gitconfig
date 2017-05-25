@@ -1,7 +1,13 @@
-[color]
-	ui = true
 [user]
+	email = michael.stephens@procore.com
 	name = Michael Stephens
-	email = michael.stephens@biola.edu
+[core]
+	excludesfile = /Users/michaelstephens/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [push]
 	default = simple
